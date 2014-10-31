@@ -1,0 +1,16 @@
+@author Aleksey Morarash <aleksey.morarash@gmail.com>
+@copyright 2014 Aleksey Morarash <aleksey.morarash@gmail.com>
+@version {{VERSION}}
+@title Welcome to UDP Request-Reply Bridge for Erlang.
+@doc == Contents ==
+
+<ol>
+ <li>{@section Summary}</li>
+</ol>
+
+== Summary ==
+
+Provides an API to make Request-Reply interactions between
+an Erlang nodes using the UDP/IP network protocol.
+
+See documentation for udpcall module for more details.

@@ -1,0 +1,11 @@
+%%% @author Aleksey Morarash <aleksey.morarash@gmail.com>
+%%% @since 31 Oct 2014
+%%% @copyright 2014, Aleksey Morarash <aleksey.morarash@gmail.com>
+%%% @doc udpcall application resource file
+
+{application, udpcall,
+ [
+  {description,  "UDP Request-Reply Bridge"},
+  {vsn,          "{{VERSION}}"},
+  {modules,      [udpcall]}
+ ]}.
