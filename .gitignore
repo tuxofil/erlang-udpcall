@@ -3,3 +3,4 @@ Emakefile
 *.beam
 *.app
 *~
+erl_crash.dump
