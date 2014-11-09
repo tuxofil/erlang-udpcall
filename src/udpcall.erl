@@ -93,6 +93,7 @@
 -export_type(
    [options/0,
     option/0,
+    socket_option/0,
     receiver/0,
     bridge_ref/0,
     host/0,
@@ -105,7 +106,13 @@
 -type option() ::
         {bind_port, inet:port_number()} |
         {receiver, receiver()} |
-        {name, atom()}.
+        {name, atom()} |
+        socket_option().
+
+-type socket_option() ::
+        {buffer, non_neg_integer()} |
+        {recbuf, non_neg_integer()} |
+        {sndbuf, non_neg_integer()}.
 
 -type receiver() ::
         (ProcessID :: pid()) |
@@ -202,7 +209,18 @@ init(Options) ->
             false ->
                 self()
         end,
-    UdpOpts = [{active, true}, {reuseaddr, true}, binary],
+    UdpOpts =
+        [{active, true}, {reuseaddr, true}, binary] ++
+        lists:filter(
+          fun({buffer, _}) ->
+                  true;
+             ({recbuf, _}) ->
+                  true;
+             ({sndbuf, _}) ->
+                  true;
+             (_) ->
+                  false
+          end, Options),
     BindPort = proplists:get_value(bind_port, Options, 0),
     {ok, Socket} = gen_udp:open(BindPort, UdpOpts),
     Receiver =
