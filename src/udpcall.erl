@@ -92,6 +92,7 @@
 
 -export_type(
    [options/0,
+    option/0,
     receiver/0,
     bridge_ref/0,
     host/0,
