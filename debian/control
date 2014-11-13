@@ -5,9 +5,9 @@ Maintainer: Aleksey Morarash <aleksey.morarash@gmail.com>
 Build-Depends: debhelper (>= 8.0.0), erlang-base, erlang-dev, erlang-tools,
  erlang-edoc
 Standards-Version: 3.9.3
-Homepage: https://github.com/tuxofil/udpcall
-Vcs-Browser: https://github.com/tuxofil/udpcall
-Vcs-Git: https://github.com/tuxofil/udpcall.git
+Homepage: https://github.com/tuxofil/erlang-udpcall
+Vcs-Browser: https://github.com/tuxofil/erlang-udpcall
+Vcs-Git: https://github.com/tuxofil/erlang-udpcall.git
 
 Package: erlang-udpcall
 Architecture: all
