@@ -1,4 +1,4 @@
-# UDP-based Request-Reply Bridge for Erlang.
+# UDP-based Request-Reply Bridge for Erlang nodes.
 
 ## Summary
 

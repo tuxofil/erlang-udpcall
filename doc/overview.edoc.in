@@ -1,7 +1,7 @@
 @author Aleksey Morarash <aleksey.morarash@gmail.com>
 @copyright 2014 Aleksey Morarash <aleksey.morarash@gmail.com>
 @version {{VERSION}}
-@title Welcome to UDP Request-Reply Bridge for Erlang.
+@title Welcome to UDP Request-Reply Bridge for Erlang nodes.
 @doc == Contents ==
 
 <ol>
