@@ -71,6 +71,8 @@
 
 -module(udpcall).
 
+-behaviour(gen_server).
+
 %% API exports
 -export(
    [start_link/1,
