@@ -1,3 +1,10 @@
+erlang-udpcall (0.1.0) unstable; urgency=low
+
+  * socket tuning: add ability to change buffer sizes
+  * minor fixes.
+
+ -- Aleksey Morarash <aleksey.morarash@gmail.com>  Sun, 09 Nov 2014 22:04:00 +0200
+
 erlang-udpcall (0.0.1) unstable; urgency=low
 
   * Initial release.
